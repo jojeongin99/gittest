@@ -1,0 +1,49 @@
+<cmd>
+
+git
+mkdir gitTest
+cd gitTest
+git init
+notepad test.py
+ > 메모장열리면 print('hello')
+
+git add test.py
+
+git config --global user.email whwjddls99@naver.com
+git config --global user.name "jojeongin99"
+git remote add origin https://github.com/jojeongin99/gittest.git
+git commit -m "first commit"      # first commit 은 설명이라고 생각
+git branch -M main 
+git branch
+git push -u origin main
+
+notepad test1.py
+  > print('test1')
+git add .
+git commit -m "first commit1"
+git push -u origin main
+
+git branch mybranch
+git checkout mybranch
+git branch
+notepad test2.py
+ > print('test2')
+git add .
+git commit -m "trird commit"
+git push -u origin mybranch
+
+
+
+cd ..
+mkdir gitTest1
+git clone https://github.com/jojeongin99/gittest.git
+
+
+<vscode>
+
+
+
+
+
+
+
